@@ -1,212 +1,229 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adeshwar & Payal Wedding Pamphlet — 29 Nov 2025</title>
-  <meta name="description" content="Pamphlet for the Wedding Ceremony of Adeshwar & Payal — 29 November 2025 at Lesieli Tonga Auditorium" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adeshwar & Payal | Wedding Celebration 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;600&family=Inter:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:ital,wght@1,500&display=swap');
-    :root{
-      --peach-50: #fffaf8;
-      --peach-100: #fff2eb;
-      --peach-200: #ffe0d0;
-      --peach-400: #ffbfa0;
-      --peach-600: #ff8a5a;
-      --accent: #c97b6b;
-      --text: #3b2f2b;
-      --muted: #6b5a57;
-      --radius: 1rem;
+    :root {
+      --royal-blue: #355C9E;
+      --gold: #D4AF37;
+      --soft-gold-shadow: rgba(212,175,55,0.25);
+      --light-bg: #ffffff;
+      --transition: all 0.6s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background: var(--light-bg);
+      color: var(--gold);
+      line-height: 1.7;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header {
+      text-align: center;
+      height: 70vh;
+      background: url('https://adeshwar.github.io/images/wedding.JPG') center center / cover no-repeat;
+      position: relative;
+    }
+
+    /* Elegant multi-layer fade under image */
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 160px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 248, 225, 0.6) 35%,
+        rgba(255, 255, 255, 0.95) 80%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+
+    .title-section {
+      max-width: 850px;
+      margin: -2em auto 3em auto;
+      padding: 3em 2.5em;
+      background: var(--light-bg);
+      box-shadow: 0 6px 25px var(--soft-gold-shadow);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      width: calc(100% - 3em);
+      border-radius: 0;
+    }
+
+    .title-section h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 3.2rem;
+      color: var(--royal-blue);
+      letter-spacing: 0.05em;
+      margin: 0;
+    }
+
+    .divider {
+      width: 140px;
+      height: 4px;
+      margin: 1em auto;
+      background: linear-gradient(90deg, #f3d37d, #d4af37, #f3d37d);
+      border-radius: 2px;
+      animation: shimmer 3s infinite;
+    }
+
+    .title-section h2 {
       font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.5rem;
+      margin-top: 0.8em;
+      letter-spacing: 0.03em;
     }
-    body{
-      margin:0;
-      background: linear-gradient(180deg, var(--peach-50), var(--peach-100));
-      color:var(--text);
-      line-height:1.6;
-      position:relative;
-      overflow-x:hidden;
-      -webkit-font-smoothing:antialiased;
-      font-size:1rem;
-    }
-    header{
-      text-align:center;
-      background:linear-gradient(180deg,var(--peach-200),var(--peach-100));
-      padding:4em 1.25em 2.5em 1.25em;
-      border-bottom:0.2em solid var(--peach-400);
-      position:relative;
-      background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/73/Indian_wedding_banner_background.jpg');
-      background-size:cover;
-      background-position:center;
-    }
-    header::before, header::after{
-      content:'';
-      position:absolute;
-      width:7.5em; height:7.5em;
-      background:url('https://upload.wikimedia.org/wikipedia/commons/3/38/Indian_Mandala_Design.svg') no-repeat center/contain;
-      opacity:0.15;
-    }
-    header::before{left:1.25em;top:0.6em;transform:rotate(-20deg);}
-    header::after{right:1.25em;bottom:0.6em;transform:rotate(20deg);}
 
-    header h1{
-      font-family:'Lora',serif;
-      font-style:italic;
-      font-weight:500;
-      font-size:3.5rem;
-      margin:0;
-      color:var(--accent);
-      text-shadow:0 0.125em 0.375em rgba(0,0,0,0.1);
-      letter-spacing:0.03em;
+    section {
+      max-width: 850px;
+      margin: 3em auto;
+      padding: 2.5em;
+      background: var(--light-bg);
+      border-radius: 1rem;
+      box-shadow: 0 6px 25px var(--soft-gold-shadow);
     }
-    header h2{
-      margin-top:0.75em;
-      font-family:'Playfair Display',serif;
-      font-weight:500;
-      color:var(--muted);
-      font-size:1.2rem;
-      letter-spacing:0.04em;
-    }
-    section{
-      max-width:53rem;
-      margin:2.5em auto;
-      background:white;
-      border-radius:var(--radius);
-      padding:1.75em 2em;
-      border:0.0625em solid rgba(0,0,0,0.05);
-      box-shadow:0 0.25em 1.25em rgba(0,0,0,0.06);
-      position:relative;
-    }
-    section::before{
-      content:'';
-      position:absolute;
-      inset:0;
-      border-radius:var(--radius);
-      border:0.125em dashed var(--peach-200);
-      pointer-events:none;
-    }
-    section h2{
-      text-align:center;
-      color:var(--accent);
-      font-family:'Playfair Display',serif;
-      font-weight:700;
-      margin-bottom:0.875em;
-      border-bottom:0.0625em solid var(--peach-400);
-      padding-bottom:0.4em;
-      text-transform:uppercase;
-      display:block;
-      width:100%;
-      letter-spacing:0.05em;
-    }
-    .ceremony-step{
-      margin:1em 0;
-      text-align:center;
-      font-size:1rem;
-    }
-    .ceremony-step strong{
-      display:block;
-      color:var(--peach-600);
-      margin-bottom:0.4em;
-      font-weight:600;
-      font-family:'Playfair Display',serif;
-    }
-    .mandala-bg{
-      position:absolute;
-      top:-5em; right:-5em;
-      width:10em; height:10em;
-      background:url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Mandala_flower_peach.svg') no-repeat center/contain;
-      opacity:0.08;
-      pointer-events:none;
-    }
-    footer{
-      text-align:center;
-      padding:2.5em 1.25em;
-      font-size:0.875rem;
-      color:var(--muted);
-      position:relative;
-    }
-    footer::before{
-      content:'';
-      position:absolute;
-      top:0; left:50%;
-      transform:translateX(-50%);
-      width:7.5em; height:0.125em;
-      background:linear-gradient(90deg,transparent,var(--peach-400),transparent);
-    }
-    .upload-link{
-      display:inline-block;
-      margin-top:1em;
-      background:var(--peach-600);
-      color:white;
-      padding:0.75em 1.125em;
-      border-radius:var(--radius);
-      text-decoration:none;
-      font-weight:bold;
-      transition:all .2s ease;
-      letter-spacing:0.03em;
-    }
-    .upload-link:hover{background:var(--peach-400);color:var(--text);}
 
-    @media (max-width: 600px){
-      header h1{font-size:2.5rem;}
-      header h2{font-size:1rem;}
-      section{margin:1.5em 1em; padding:1.25em;}
-      .ceremony-step{font-size:0.95rem;}
+    section h2 {
+      text-align: center;
+      font-family: 'Cinzel Decorative', serif;
+      color: var(--gold);
+      font-size: 1.8rem;
+      margin-bottom: 1.2em;
+      letter-spacing: 0.05em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5em;
+    }
+
+    .card {
+      background: var(--light-bg);
+      border-radius: 1rem;
+      padding: 1.8em 1.2em;
+      text-align: center;
+      color: var(--gold);
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(212,175,55,0.15);
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(212,175,55,0.3);
+    }
+
+    .card strong {
+      display: block;
+      color: var(--royal-blue);
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.1rem;
+      margin-bottom: 0.4em;
+    }
+
+    .upload-link {
+      display: inline-block;
+      margin-top: 1em;
+      background: linear-gradient(90deg, #f3d37d, #d4af37);
+      color: white;
+      padding: 0.9em 1.7em;
+      border-radius: 2em;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .upload-link:hover {
+      background: var(--royal-blue);
+      color: var(--light-bg);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3em 1em;
+      font-size: 0.9rem;
+      color: var(--gold);
+      font-family: 'Lora', serif;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes shimmer {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+
+    @media (max-width: 600px) {
+      .title-section h1 { font-size: 2.4rem; }
+      .title-section h2 { font-size: 1.3rem; }
+      section { margin: 1.5em; padding: 1.5em; }
+      header { height: 50vh; }
     }
   </style>
 </head>
 <body>
-  <header>
+  <header></header>
+
+  <div class="title-section">
     <h1>Adeshwar & Payal</h1>
+    <div class="divider"></div>
     <h2>29th November 2025</h2>
-  </header>
+  </div>
 
   <section>
-    <div class="mandala-bg"></div>
-    <h2>Welcome</h2>
-    <p>With the blessings of our beloved families, we joyfully invite you to join us as we begin our sacred journey together. Thank you for being part of this celebration of love, tradition, and togetherness.</p>
-  </section>
-
-  <section>
-    <h2>Ceremony Flow</h2>
-    <div class="ceremony-step"><strong>Baarat Arrival</strong>The groom arrives with joyous music, dancing, and celebration as his family and friends accompany him to the venue in a lively procession.</div>
-    <div class="ceremony-step"><strong>Groom Entry</strong>The groom makes his ceremonial entrance, welcomed by the bride’s family in a gesture of love and unity.</div>
-    <div class="ceremony-step"><strong>Bride Entry</strong>The bride enters gracefully, surrounded by her bridesmaids or family, symbolizing purity, love, and anticipation for the union.</div>
-    <div class="ceremony-step"><strong>Mala Exchange</strong>The couple exchanges floral garlands (malas) as a sign of acceptance and mutual respect, marking the beginning of their sacred bond.</div>
-    <div class="ceremony-step"><strong>Ganesh Puja</strong>Seeking the blessings of Lord Ganesha, the remover of obstacles, to ensure an auspicious start to the ceremony and a harmonious married life.</div>
-    <div class="ceremony-step"><strong>Kanyadaan</strong>The bride’s parents lovingly entrust their daughter to the groom, symbolizing the merging of two families and the parents’ blessings for the couple’s future.</div>
-    <div class="ceremony-step"><strong>Hawan</strong>The sacred fire ritual, where offerings are made to Agni (the Fire God), representing the divine witness to the marriage vows.</div>
-    <div class="ceremony-step"><strong>Saptpadi</strong>The seven symbolic steps taken together by the couple, each representing a vow for love, trust, prosperity, and lifelong companionship.</div>
-    <div class="ceremony-step"><strong>Thali, Sindoor & Mangalsutra</strong>The groom adorns the bride with traditional symbols of marriage, marking the sanctity and eternal commitment of their union.</div>
-    <div class="ceremony-step"><strong>Mangal Pheras</strong>The couple circles the holy fire seven times, reaffirming their promises to support and cherish each other throughout their lives.</div>
-    <div class="ceremony-step"><strong>Ashirwad</strong>The couple seeks blessings from elders and loved ones, concluding the ceremony with prayers for a blissful married life.</div>
-    <div class="ceremony-step"><strong>Bidaai</strong>A heartfelt farewell as the bride departs with her husband, symbolizing the beginning of their new life together.</div>
+    <h2>Welcome & Gratitude</h2>
+    <p style="text-align:center; font-size:1.05rem;">With the blessings of our families and the love of our friends, we joyfully invite you to join us as we celebrate the start of our forever. Your presence means the world to us — thank you for sharing this special day and the memories we’ll treasure for a lifetime.</p>
   </section>
 
   <section>
     <h2>Program Schedule</h2>
-    <div class="ceremony-step"><strong>3:30 PM</strong>Baraat Procession</div>
-    <div class="ceremony-step"><strong>4:00 PM</strong>Main Ceremony Begins</div>
-    <div class="ceremony-step"><strong>6:00 PM</strong>Legal Ceremony</div>
-    <div class="ceremony-step"><strong>7:00 PM</strong>Dinner & Photos</div>
-    <div class="ceremony-step"><strong>9:30 PM</strong>Bidaai</div>
+    <div class="grid">
+      <div class="card"><strong>3:30 PM</strong>Baraat Procession</div>
+      <div class="card"><strong>4:00 PM</strong>Main Ceremony</div>
+      <div class="card"><strong>6:00 PM</strong>Legal Ceremony</div>
+      <div class="card"><strong>7:00 PM</strong>Dinner & Photos</div>
+      <div class="card"><strong>9:30 PM</strong>Bidaai</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ceremony Flow</h2>
+    <div class="grid">
+      <div class="card"><strong>Baarat Arrival</strong>The groom arrives with celebration and joy as music fills the air.</div>
+      <div class="card"><strong>Bride Entry</strong>The bride enters gracefully, symbolising love and new beginnings.</div>
+      <div class="card"><strong>Exchange of Garlands</strong>A moment of unity and mutual respect between the couple.</div>
+      <div class="card"><strong>Saptapadi</strong>The seven steps of lifelong commitment, trust, and companionship.</div>
+    </div>
   </section>
 
   <section>
     <h2>Photo Memories</h2>
-    <p style="text-align:center;">We would love to see your beautiful captures from the day! Please upload your photos and help us cherish these moments forever.</p>
+    <p style="text-align:center; font-size:1.05rem;">We would love to see your beautiful captures from the day! Upload your photos and help us relive these memories.</p>
     <div style="text-align:center;">
       <a href="https://photos.app.goo.gl/spJzPReKXzdzK3Tg6" class="upload-link" target="_blank">Upload or View Photos</a>
     </div>
   </section>
 
-  <section>
-    <h2>Gratitude</h2>
-    <p style="text-align:center;">We are deeply thankful to our family and friends for their love, support, and blessings. Your presence means the world to us as we start this new chapter together.</p>
-  </section>
-
   <footer>
-    Made with ♥ by Adeshwar & Payal | 29th November 2025 | Lesieli Tonga Auditorium
+    Made with love by Adeshwar & Payal | 29th November 2025
   </footer>
 </body>
 </html>
